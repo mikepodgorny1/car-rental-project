@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Rental Project</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/46661a8d42.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </head>
+
+  <!-- Navigation Bar -->
+
+  <body>
+    <nav>
+      <div class="row nav__row">
+        <img
+          src="https://car-rental-swart-five.vercel.app/logo.png"
+          class="nav__logo__image"
+        />
+        <div class="nav__links">
+          <a href="#" class="nav__link">Home</a>
+          <a href="#" class="nav__link">About</a>
+          <a href="#" class="nav__link">Vehicle Models</a>
+          <a href="#" class="nav__link">Testimonials</a>
+          <a href="#" class="nav__link">Our Team</a>
+          <a href="#" class="nav__link">Contact</a>
+        </div>
+        <div class="nav__actions">
+          <a href="#" class="nav__link__sign-in">Sign In</a>
+          <button class="button nav__button">Register</button>
+        </div>
+
+        <button class="nav__menu" onclick="openMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <nav class="menu">
+      <button class="menu__close" onclick="closeMenu()">
+<i class="fa-solid fa-x x"></i>
+      </button>
+<div class="menu__links">
+  <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
+  <a href="#" class="menu__link" onclick="closeMenu()">About</a>
+  <a href="#" class="menu__link" onclick="closeMenu()">Vehicle Models</a>
+  <a href="#" class="menu__link" onclick="closeMenu()">Testimonials</a>
+  <a href="#" class="menu__link" onclick="closeMenu()">Our Team</a>
+  <a href="#" class="menu__link" onclick="closeMenu()">Contact</a>
+</div>
+    </nav>
+
+    <!-- Header -->
+
+    <header>
+      <div class="container header__container">
+        <img
+          src="https://car-rental-html-css.vercel.app/assets/header-bg.png"
+          class="header__bg"
+        />
+        <div class="row header__row">
+          <div class="header__text">
+            <h2 class="header__title__subtext">Plan your trip now</h2>
+            <h1 class="header__title">
+              Save <span class="header__color">big</span> with our car rental
+            </h1>
+            <p class="header__text__para">
+              Rent the car of your dreams. Unbeatable prices, unlimited miles,
+              flexible pick-up options, and much more.
+            </p>
+            <div class="header__buttons">
+              <button class="button button__header__book">
+                Book Ride <i class="fa-regular fa-circle-check"></i>
+              </button>
+              <button class="button button__header__learn">
+                Learn More
+                <i class="fa-solid fa-angle-right button__learn__icon"></i>
+              </button>
+            </div>
+          </div>
+          <figure class="header__image__wrapper">
+            <img
+              src="https://car-rental-html-css.vercel.app/assets/header-car.png"
+              class="header__image"
+            />
+          </figure>
+        </div>
+      </div>
+    </header>
+
+    <!-- Features -->
+
+    <section id="features">
+      <div class="container">
+        <div class="row features__row">
+          <h3 class="features__subtitle">Plan your trip now</h3>
+          <h2 class="features__title">Quick and easy car rental</h2>
+          <div class="features">
+            <div class="feature__items">
+              <img
+                src="https://car-rental-html-css.vercel.app/assets/feature-1.png"
+                class="feature__image"
+              />
+              <h4 class="feature__title">Select Car</h4>
+              <p class="feature__para">
+                We offer a big range of vehicles for all your driving needs. We
+                have the perfect car to meet your needs.
+              </p>
+            </div>
+            <div class="feature__items">
+              <img
+                src="https://car-rental-html-css.vercel.app/assets/feature-2.png"
+                class="feature__image"
+              />
+              <h4 class="feature__title">Contact Operator</h4>
+              <p class="feature__para">
+                Our knowledgeable and friendly operators are always ready to
+                help with any questions or concerns.
+              </p>
+            </div>
+            <div class="feature__items">
+              <img
+                src="https://car-rental-html-css.vercel.app/assets/feature-3.png"
+                class="feature__image"
+              />
+              <h4 class="feature__title">Let's Drive</h4>
+              <p class="feature__para">
+                Whether you're hitting the open road, we've got you covered with
+                our wide range of cars.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banner 1 -->
+
+    <section id="banner-1">
+      <div class="banner-1__container">
+        <h2 class="banner__title">Save big with our cheap car rental!</h2>
+        <h3 class="banner__subtitle">
+          Top Airports. Local Suppliers.
+          <span class="banner__subtitle--color">24/7 </span> Support.
+        </h3>
+      </div>
+    </section>
+
+    <!-- Choose Us Section -->
+
+    <section id="choose">
+      <div class="container choose__container">
+        <div class="row choose__row">
+          <figure class="choose__image__wrapper">
+            <img
+              src="https://car-rental-html-css.vercel.app/assets/choose-car.png"
+              class="choose__image"
+            />
+          </figure>
+          <div class="choose__content">
+            <div class="choose__content__left">
+              <h3 class="choose__subtitle">Why Choose Us</h3>
+              <h2 class="choose__title">
+                Best valued deals you will ever find
+              </h2>
+              <p class="choose__para">
+                Discover the best deals you'll ever find with our unbeatable
+                offers. We're dedicated to providing you with the best value for
+                your money, so you can enjoy top-quality services and products
+                without breaking the bank. Our deals are designed to give you
+                the ultimate renting experience, so don't miss out on your
+                chance to save big.
+              </p>
+              <button class="button choose__button">
+                Find Details <i class="fa-solid fa-angle-right"></i>
+              </button>
+            </div>
+            <div class="choose__content__right">
+              <div class="choose__feature">
+                <figure class="choose__feature__wrapper">
+                  <img
+                    src="https://car-rental-html-css.vercel.app/assets/choose-1.png"
+                    class="choose__feature__image"
+                  />
+                </figure>
+                <div class="choose__feature__text">
+                  <h4 class="choose__feature__title">Cross Country Drive</h4>
+                  <p class="choose__feature__para">
+                    Take your driving experience to the next level with our
+                    top-notch vehicles for your cross-country adventures.
+                  </p>
+                </div>
+              </div>
+
+              <div class="choose__feature">
+                <figure class="choose__feature__wrapper">
+                  <img
+                    src="https://car-rental-html-css.vercel.app/assets/choose-2.png"
+                    class="choose__feature__image"
+                  />
+                </figure>
+                <div class="choose__feature__text">
+                  <h4 class="choose__feature__title">All Inclusive Pricing</h4>
+                  <p class="choose__feature__para">
+                    Get everything you need in one convenient, transparent price
+                    with our all-inclusive pricing policy.
+                  </p>
+                </div>
+              </div>
+
+              <div class="choose__feature">
+                <figure class="choose__feature__wrapper">
+                  <img
+                    src="https://car-rental-html-css.vercel.app/assets/choose-3.png"
+                    class="choose__feature__image"
+                  />
+                </figure>
+                <div class="choose__feature__text">
+                  <h4 class="choose__feature__title">No Hidden Charges</h4>
+                  <p class="choose__feature__para">
+                    Enjoy peace of mind with our no hidden charges policy. We
+                    believe in transparent and honest pricing.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+      <div class="container">
+        <div class="row testimonials__row">
+          <h3 class="testimonials__subtitle">Reviewed by People</h3>
+          <h2 class="testimonials__title">Client's Testimonials</h2>
+          <p class="testimonials__para">
+            Discover the positive impact we've made on the our clients by
+            reading through their testimonials. Our clients have experienced our
+            service and results, and they're eager to share their positive
+            experiences with you.
+          </p>
+          <div class="testimonials__list">
+            <div class="testimonial">
+              <p class="testimonial__review">
+                "We rented a car from this website and had an amazing
+                experience! The booking was easy and the rental rates were very
+                affordable. "
+              </p>
+
+              <div class="testimonial__info">
+                <figure class="testimonial__image__wrapper">
+                  <img
+                    src="https://car-rental-html-css.vercel.app/assets/testimonial-1.jpg"
+                    class="testimonial__image"
+                  />
+                </figure>
+                <div class="testimonial__review__profile">
+                  <h4 class="testimonial__review__name">Parry Hotter</h4>
+                  <h5 class="testimonial__review__location">Belgrade</h5>
+                </div>
+                <i
+                  class="fa-solid fa-quote-right testimonial__review__icon"
+                ></i>
+              </div>
+            </div>
+            <div class="testimonial">
+              <p class="testimonial__review">
+                "We rented a car from this website and had an amazing
+                experience! The booking was easy and the rental rates were very
+                affordable. "
+              </p>
+
+              <div class="testimonial__info">
+                <figure class="testimonial__image__wrapper">
+                  <img
+                    src="https://car-rental-html-css.vercel.app/assets/testimonial-2.jpg"
+                    class="testimonial__image"
+                  />
+                </figure>
+                <div class="testimonial__review__profile">
+                  <h4 class="testimonial__review__name">Ron Rizzly</h4>
+                  <h5 class="testimonial__review__location">Novi Sad</h5>
+                </div>
+                <i
+                  class="fa-solid fa-quote-right testimonial__review__icon"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banner 2 -->
+    <section id="banner-2">
+      <div class="container banner__container">
+        <div class="row banner__row">
+          <div class="banner-2__content">
+            <h2 class="banner-2__title">
+              Download our app to get the most out of it
+            </h2>
+            <p class="banner-2__para">
+              Thrown shy denote ten ladies though ask saw. Or by to he going
+              think order event music. Incommode so intention defective at
+              convinced. Led income months itself and houses you.
+            </p>
+            <div class="download__buttons">
+              <a href="#" class="download__button__link">
+                <img
+                  src="https://car-rental-html-css.vercel.app/assets/google-play.svg"
+                  class="download__button__image"
+                />
+              </a>
+              <a href="#" class="download__button__link">
+                <img
+                  src="https://car-rental-html-css.vercel.app/assets/app-store.svg"
+                  class="download__button__image"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer__container">
+      <div class="row footer__row">
+        <div class="footer__content">
+          <div class="footer__content__intro">
+            <h4 class="footer__title"><b>CAR</b> Rental</h4>
+            <p class="footer__intro__para">
+              We offer a big range of vehicles for all your driving needs. We
+              have the perfect car to meet your needs.
+            </p>
+            <div class="footer__intro__links">
+              <a href="tel:1234567890" class="footer__intro__link">
+                <i class="fa-solid fa-phone footer__icon"></i>
+                <span class="footer__intro__link__span">(123) 456-7890</span>
+              </a>
+              <a href="mailto:carrental@gmail.com" class="footer__intro__link">
+                <i class="fa-solid fa-envelope footer__icon"></i>
+                <span class="footer__intro__link__span"
+                  >carrental@gmail.com</span
+                >
+              </a>
+              <a href="https://xpeedstudio.com" class="footer__intro__link"
+                >Design by XpeedStudio</a
+              >
+            </div>
+          </div>
+          <div class="footer__content__company">
+            <h4 class="footer__title">Company</h4>
+            <div class="footer__content__company__links">
+              <a href="#" class="footer__content__company__link">New York</a>
+              <a href="#" class="footer__content__company__link">Career</a>
+              <a href="#" class="footer__content__company__link">Mobile</a>
+              <a href="#" class="footer__content__company__link">Blog</a>
+              <a href="#" class="footer__content__company__link">How we work</a>
+            </div>
+          </div>
+          <div class="footer__content__hours">
+            <h4 class="footer__title">Working Hours</h4>
+            <div class="footer__content__hours__list">
+              <span class="footer__hours">Mon - Fri: 9:00AM - 9:00PM</span>
+              <span class="footer__hours">Sat: 9:00AM - 9:00PM</span>
+              <span class="footer__hours">Sun: Closed</span>
+            </div>
+          </div>
+          <div class="footer__content__subscribe">
+            <h4 class="footer__title">Subscription</h4>
+            <div class="footer__content__email">
+              <p class="footer__email__para">
+                Subscribe your email address for latest news & updates.
+              </p>
+              <form action="#" class="footer__email__form__input">
+                <input type="email" placeholder="Enter Email Address" />
+                <button class="footer__email__form__button">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>
